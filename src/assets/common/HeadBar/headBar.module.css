@@ -1,0 +1,91 @@
+/* ========================================= Head Bar ========================================== */
+.headBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+    width:100%;
+    background-color:#a69090;
+    box-shadow: 0 2px 5px;
+    position:absolute;
+}
+
+
+/* ==================================== Logo Container ========================================== */
+.logoImage{
+    height:9vh;
+}
+
+.logoBtn{
+    border:none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.logoBtn:hover{
+    cursor:pointer;
+    box-shadow: 0 0 5px;
+}
+
+/* ==================================== Menu Container ========================================== */
+.menuContainer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 19vw;
+    height:7vh;
+    border-radius: 2rem;
+    background-color: #725a5a;
+}
+
+.menuBtn{
+    border:none;
+    background-color: transparent;
+    height:6vh;
+    width:6vw;
+    border-radius: 2rem;
+}
+
+.menuBtn:hover{
+    cursor: pointer;
+    color:white;
+    background-color: #a69090;
+}
+
+.menuBtnActive{
+    color:white;
+    background-color: #a69090;
+    height:6vh;
+    width:6vw;
+    border-radius: 2rem;
+    border:none;
+}
+
+
+
+
+
+
+/* ==================================== Login Container ========================================== */
+.loginContainer{
+    display:flex;
+    align-items: center;
+    width: 9vw;
+    height:7vh;
+    border-radius: 2rem;
+    background-color: #725a5a;
+}
+
+.loginBtn{
+    border:none;
+    background-color: transparent;
+    height:7vh;
+    width:10vw;
+    border-radius: 2rem;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+    color:white;
+    background-color: #8b7676;
+}
