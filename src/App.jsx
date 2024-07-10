@@ -9,7 +9,7 @@ import ContactUs from './components/ContactUs/contactUs'
 import Settings from './components/Settings/settings'
 
 /* ============================ Import Function ============================= */
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 
 
