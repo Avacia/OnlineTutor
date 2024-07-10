@@ -17,6 +17,8 @@ export default function headBar(){
 
     const location = useLocation()
     const [itemClicked, setItemClicked] = useState(null)
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [isSignUp, setIsSignUp] = useState(false)
 
     useEffect(() => {
         const data = window.localStorage.getItem("Online_Tutor_HeadBar_ItemClicked")
@@ -39,6 +41,14 @@ export default function headBar(){
 
     function getClassName(path){
         return location.pathname === path ? style.menuBtnActive : style.menuBtn
+    }
+
+    function handleLogin(){
+        setIsLoggedIn(!isLoggedIn)
+    }
+
+    function handleSignUp(){
+        setIsSignUp(!isSignUp)
     }
 
     return(
@@ -73,7 +83,7 @@ export default function headBar(){
             </div>
 
             <div className={style.loginContainer}>
-                <button className={style.loginBtn}>Sign Up</button>
+                <button className={style.signUpBtn}>Sign Up</button>
                 <button className={style.loginBtn}>Login</button>
             </div>
 
